@@ -1,0 +1,3 @@
+API Key: 19b1550cea254216bcee7c1ddd7a51b7
+
+https://newsapi.org/

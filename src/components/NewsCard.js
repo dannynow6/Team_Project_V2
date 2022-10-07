@@ -1,5 +1,6 @@
 import { Card, CardImg, CardTitle, CardText } from 'reactstrap'; 
 
+//Write api call in JSX inline - Randy did same - View Docs for info 
 
 const NewsCard = (props) => {
     return (

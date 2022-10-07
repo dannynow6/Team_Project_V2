@@ -3,6 +3,8 @@ import NewsCard from './NewsCard.js';
 
 const NewsCardGroup = () => {
     <CardGroup>
-        <NewsCard 
+        <NewsCard />
     </CardGroup>
-}
+};
+
+export default NewsCardGroup;

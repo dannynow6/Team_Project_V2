@@ -5,3 +5,15 @@
 .red {
     color: #d84949;
 }
+
+.grey {
+    color: #828a9b;
+}
+
+th {
+    padding: 0 1rem;
+}
+
+tr {
+    padding: 0 1rem;
+}

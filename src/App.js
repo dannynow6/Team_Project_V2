@@ -7,6 +7,6 @@ function App() {
       <NewsCard />
     </div>
   );
-};
+}
 
 export default App;

@@ -1,3 +1,7 @@
 API Key: 19b1550cea254216bcee7c1ddd7a51b7
 
 https://newsapi.org/
+
+https://newdata.io/
+
+Api Key: pub_12049ad5733f7dbd58fb0a01d654a3df99889

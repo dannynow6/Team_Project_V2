@@ -7,17 +7,20 @@ import axios from 'axios';
 
 const NewsCard = () => {
     const [data, setData] = useState(null); 
+    const [error, setError] = useState(null);
 
-    const url = 'https://newsapi.org/v2/everything?q=bitcoin&from=2022-10-07&sortBy=popularity&apiKey=19b1550cea254216bcee7c1ddd7a51b7';
+    const url = 'https://newsdata.io/api/1/news?apikey=pub_12049ad5733f7dbd58fb0a01d654a3df99889&q=bitcoin';
 
     useEffect(() => {
         axios.get(url).then((response) => {
             setData(response.data);
         }).catch((error) => {
-            console.log(error)
+            console.log(error);
+            setError(error);
         });
     }, []);
 
+    if (error) return `Error. ${error}`;
     if (!data) return null; 
 
     return (

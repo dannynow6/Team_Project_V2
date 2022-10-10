@@ -23,8 +23,10 @@ const CryptoList = () => {
     if (!data) return null;
 
     return (
-
-            <Table hover responsive >
+            <Container >
+                <Row >
+                    <Col>
+                    <Table hover responsive >
             <thead>
                 <tr>
                     <th scope="col">#</th>
@@ -260,6 +262,10 @@ const CryptoList = () => {
 
             </tbody>
             </Table>
+                    </Col>
+                </Row>
+            </Container>
+
     );
 }
 

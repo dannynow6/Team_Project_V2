@@ -22,14 +22,15 @@ const NewsCard = () => {
 
     if (error) return `Error. ${error}`;
     if (!data) return null; 
-
+    const title = data[0].title; 
+    const description = data[0].description; 
+    
     return (
         <div>
             <CardGroup>
                 <Card>
-                    <CardImg width='90%' src={data[0].urlToImage}/>
-                    <CardTitle>{data[0].title}</CardTitle>
-                    <CardText>{data[0].description}</CardText>
+                    <CardTitle>{title}</CardTitle>
+                    <CardText>{description}</CardText>
                 </Card>
             </CardGroup>
         </div>

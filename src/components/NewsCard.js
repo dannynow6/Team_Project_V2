@@ -8,29 +8,33 @@ import axios from 'axios';
 const NewsCard = () => {
     const [data, setData] = useState(null); 
     const [error, setError] = useState(null);
-
-    const url = 'https://newsdata.io/api/1/news?apikey=pub_12049ad5733f7dbd58fb0a01d654a3df99889&q=bitcoin';
+    const options = {
+        method: 'GET',
+        url: 'https://api.newscatcherapi.com/v2/search',
+        params: {q: 'Bitcoin', lang: 'en', sort_by: 'relevancy', page: '1'},
+        headers: {
+            'x-api-key': 'ZHJFBnjR4Mbm12VCSNFCLTu0jx8g3RSCuC4pjHlvQWU'
+        }
+    };
 
     useEffect(() => {
-        axios.get(url).then((response) => {
+        axios.request(options).then((response) => {
             setData(response.data);
         }).catch((error) => {
             console.log(error);
             setError(error);
         });
-    }, []);
+    }, [axios, options]);
 
     if (error) return `Error. ${error}`;
-    if (!data) return null; 
-    const title = data[0].title; 
-    const description = data[0].description; 
+    if (!data) return null;  
     
     return (
         <div>
             <CardGroup>
                 <Card>
-                    <CardTitle>{title}</CardTitle>
-                    <CardText>{description}</CardText>
+                    <CardTitle>{data[0].title}</CardTitle>
+                    <CardText>{data[0].description}</CardText>
                 </Card>
             </CardGroup>
         </div>

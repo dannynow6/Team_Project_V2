@@ -1,0 +1,5 @@
+https://app.newscatcherapi.com/
+
+api key: ZHJFBnjR4Mbm12VCSNFCLTu0jx8g3RSCuC4pjHlvQWU
+
+https://api.newscatcherapi.com/v2/latest_headlines?countries=US&topic=business

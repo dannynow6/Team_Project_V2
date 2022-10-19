@@ -1,0 +1,4 @@
+Key: LHVfzKYlAYlQ7YOrpcT0Ev1auyBprZVZ
+Secret: nSdpgy0gm1OmO92M
+
+https://developer.nytimes.com/accounts/login
